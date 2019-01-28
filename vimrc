@@ -65,11 +65,6 @@ set dir=~/.vim/backup
 set backupdir=~/.vim/backup
 set undodir=~/.vim/backup
 
-"let &t_ti.="\e[1 q"
-"let &t_SI.="\e[5 q"
-"let &t_EI.="\e[1 q"
-"let &t_te.="\e[0 q"
-
 "let fo-=or
 color desert
 
@@ -81,6 +76,11 @@ set tabstop=4 shiftwidth=4 softtabstop=4 expandtab
 
 set number
 highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
+
+let &t_ti.="\e[1 q"
+let &t_SI.="\e[5 q"
+let &t_EI.="\e[1 q"
+let &t_te.="\e[0 q"
 
 inoremap jj <Esc>
 nnoremap j gj
