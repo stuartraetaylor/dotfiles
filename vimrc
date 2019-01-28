@@ -76,6 +76,7 @@ set tabstop=4 shiftwidth=4 softtabstop=4 expandtab
 
 set number
 highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
+nnoremap <F2> :set nonumber!<CR>
 
 let &t_ti.="\e[1 q"
 let &t_SI.="\e[5 q"
