@@ -5,9 +5,13 @@ case $- in
       *) return;;
 esac
 
+# History.
 HISTCONTROL=ignoreboth
 HISTSIZE=1000
 HISTFILESIZE=2000
+
+# Vi mode!
+#set -o vi
 
 shopt -s histappend
 shopt -s checkwinsize
@@ -28,7 +32,9 @@ alias la='ls -A'
 alias l='ls -CF'
 alias ta='tmux attach'
 
-eval $(thefuck --alias)
+if [ -f /usr/local/bin/thefuck ]; then
+    eval $(thefuck --alias)
+fi
 
 if ! shopt -oq posix; then
   if [ -f /usr/share/bash-completion/bash_completion ]; then
@@ -38,12 +44,12 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# Vi mode!
-#set -o vi
-
 # Git completion.
-source /etc/bash_completion.d/git-prompt
+if [ -f /etc/bash_completion.d/git-prompt ]; then
+    source /etc/bash_completion.d/git-prompt
+fi
 
+# Git prompt options.
 GIT_PS1_SHOWDIRTYSTATE=true      # unstaged (*) and staged (+)
 GIT_PS1_SHOWSTASHSTATE=true      # '$'
 GIT_PS1_SHOWUNTRACKEDFILES=true  # '%'
