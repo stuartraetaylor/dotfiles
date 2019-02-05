@@ -15,7 +15,9 @@ if v:progname =~? "evim"
 endif
 
 " Get the defaults that most users want.
-source $VIMRUNTIME/defaults.vim
+if filereadable("$VIMRUNTIME/defaults.vim")
+  source $VIMRUNTIME/defaults.vim
+endif
 
 if has("vms")
   set nobackup		" do not keep a backup file, use versions instead
