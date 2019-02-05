@@ -33,22 +33,19 @@ alias l='ls -CF'
 alias ta='tmux attach'
 alias gradle=./gradlew
 
-if [ -f /usr/local/bin/thefuck ]; then
-    eval $(thefuck --alias)
-fi
+# thefuck.
+[ -f /usr/local/bin/thefuck ] && eval $(thefuck --alias)
 
-if ! shopt -oq posix; then
-  if [ -f /usr/share/bash-completion/bash_completion ]; then
-    . /usr/share/bash-completion/bash_completion
-  elif [ -f /etc/bash_completion ]; then
-    . /etc/bash_completion
-  fi
+
+# Completion.
+if [ -f /usr/share/bash-completion/bash_completion ]; then
+. /usr/share/bash-completion/bash_completion
+elif [ -f /etc/bash_completion ]; then
+. /etc/bash_completion
 fi
 
 # Git completion.
-if [ -f /etc/bash_completion.d/git-prompt ]; then
-    source /etc/bash_completion.d/git-prompt
-fi
+[ -f /etc/bash_completion.d/git-prompt ] && source /etc/bash_completion.d/git-prompt
 
 # Git prompt options.
 GIT_PS1_SHOWDIRTYSTATE=true      # unstaged (*) and staged (+)
@@ -75,4 +72,3 @@ PS1="$PS1"'`__git_ps1`'        # Git bash function
 PS1="$PS1"'\[\033[0m\]'        # change to white
 PS1="$PS1"'\n'                 # new line
 PS1="$PS1"'$ '                 # '$'
-
