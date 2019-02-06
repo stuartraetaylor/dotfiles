@@ -57,9 +57,12 @@ endif " has("autocmd")
 " compatible.
 " The ! means the package won't be loaded right away but when plugins are
 " loaded during initialization.
-if has('syntax') && has('eval')
-  packadd! matchit
-endif
+try
+    if has('syntax') && has('eval')
+      packadd! matchit
+    endif
+catch
+endtry
 
 " Put swap files somewhere less intrusive
 set swapfile
