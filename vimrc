@@ -65,10 +65,13 @@ catch
 endtry
 
 " Put swap files somewhere less intrusive
-set swapfile
-set dir=~/.vim/backup
-set backupdir=~/.vim/backup
-set undodir=~/.vim/backup
+set undodir=~/.vim/tmp//
+set backupdir=~/.vim/tmp//
+set directory=~/.vim/tmp//
+set backupskip=/tmp/*,/private/tmp/*"
+set backup
+set writebackup
+set noswapfile
 
 "let fo-=or
 color desert
