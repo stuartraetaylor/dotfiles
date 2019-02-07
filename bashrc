@@ -5,6 +5,15 @@ case $- in
       *) return;;
 esac
 
+unameOut="$(uname -s)"
+case "${unameOut}" in
+    Linux*)     machine=Linux;;
+    Darwin*)    machine=Mac;;
+    CYGWIN*)    machine=Cygwin;;
+    MINGW*)     machine=MinGw;;
+    *)          machine="UNKNOWN:${unameOut}"
+esac
+
 # History.
 HISTCONTROL=ignoreboth
 HISTSIZE=1000
@@ -48,11 +57,13 @@ fi
 [ -f /etc/bash_completion.d/git-prompt ] && source /etc/bash_completion.d/git-prompt
 
 # Git prompt options.
-GIT_PS1_SHOWDIRTYSTATE=true      # unstaged (*) and staged (+)
-GIT_PS1_SHOWSTASHSTATE=true      # '$'
-GIT_PS1_SHOWUNTRACKEDFILES=true  # '%'
-GIT_PS1_SHOWCOLORHINTS=true
-GIT_PS1_SHOWUPSTREAM="verbose"
+if [ "$machine" != "MinGw" ]; then
+    GIT_PS1_SHOWDIRTYSTATE=true      # unstaged (*) and staged (+)
+    GIT_PS1_SHOWSTASHSTATE=true      # '$'
+    GIT_PS1_SHOWUNTRACKEDFILES=true  # '%'
+    GIT_PS1_SHOWCOLORHINTS=true
+    GIT_PS1_SHOWUPSTREAM="verbose"
+fi
 
 # Prompt.
 PS1='\[\033]0;\u@\h:${PWD//[^[:ascii:]]/?}\007\]' # set window title
@@ -72,3 +83,4 @@ PS1="$PS1"'`__git_ps1`'        # Git bash function
 PS1="$PS1"'\[\033[0m\]'        # change to white
 PS1="$PS1"'\n'                 # new line
 PS1="$PS1"'$ '                 # '$'
+
