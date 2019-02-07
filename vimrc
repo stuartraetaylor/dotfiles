@@ -52,8 +52,8 @@ nnoremap <leader>v :e $MYVIMRC<cr>
 nnoremap <leader>V :tabnew $MYVIMRC<cr>
 nnoremap <leader>r :so $MYVIMRC<cr>
 
-nnoremap <leader>s :%s /
-vnoremap <leader>s :%s /
+nnoremap <leader>s :%s/
+vnoremap <leader>s :%s/
 
 inoremap jj <esc>
 nnoremap j gj
