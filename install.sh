@@ -1,5 +1,5 @@
 #!/bin/bash
-declare -a dotfiles=("bashrc" "vimrc" "gitconfig" "tmux.conf")
+declare -a dotfiles=("bashrc" "vimrc" "tmux.conf" "gitconfig")
 
 for f in "${dotfiles[@]}"; do
     echo
