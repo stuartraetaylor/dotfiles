@@ -20,7 +20,7 @@ set writebackup
 set noswapfile
 
 set hlsearch
-set autoindent		" always set autoindenting on
+set autoindent
 
 "let fo-=or
 color desert
@@ -54,7 +54,7 @@ nnoremap <leader>r :so $MYVIMRC<cr>
 nnoremap <leader>s :%s/
 vnoremap <leader>s :%s/
 
-inoremap jj <esc>
+inoremap jk <esc>
 nnoremap j gj
 nnoremap k gk
 
