@@ -8,7 +8,6 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-scripts/indentpython.vim'
-Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
 call vundle#end()
 filetype plugin indent on
@@ -33,7 +32,7 @@ set clipboard=unnamed
 syntax enable
 color desert
 
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+"au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 let g:tex_flavor='latex'
 set tabstop=4 shiftwidth=4 softtabstop=4 expandtab
 highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
@@ -53,7 +52,6 @@ nnoremap <leader>v :e $MYVIMRC<cr>
 nnoremap <leader>r :so $MYVIMRC<cr>
 
 nnoremap <leader>s :%s/
-vnoremap <leader>s :%s/
 
 inoremap jk <esc>
 nnoremap j gj
