@@ -58,6 +58,9 @@ fi
 # Git completion.
 [ -f /etc/bash_completion.d/git-prompt ] && source /etc/bash_completion.d/git-prompt
 
+# Gradle completion.
+[ -f /etc/bash_completion.d/gradle-completion.bash ] && source /etc/bash_completion.d/gradle-completion.bash
+
 # Git prompt options.
 if [ "$machine" != "MinGw" ]; then
     GIT_PS1_SHOWDIRTYSTATE=true      # unstaged (*) and staged (+)
