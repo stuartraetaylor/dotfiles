@@ -43,6 +43,7 @@ alias la='ls -A'
 alias l='ls -CF'
 alias ta='tmux attach'
 alias gradle=./gradlew
+alias gw=./gradlew
 
 # thefuck.
 [ -f /usr/local/bin/thefuck ] && eval $(thefuck --alias)
