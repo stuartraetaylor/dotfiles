@@ -47,6 +47,7 @@ let mapleader = ","
 
 noremap <leader>w :w<cr>
 noremap <leader>q :q<cr>
+noremap <leader>e :e<cr>
 
 nnoremap <leader>v :e $MYVIMRC<cr>
 nnoremap <leader>r :so $MYVIMRC<cr>
