@@ -1,5 +1,6 @@
 [core]
 	editor = vim
+	autocrlf input
 [user]
 	name = Stuart Taylor
 	email = stuartraetaylor@users.noreply.github.com
