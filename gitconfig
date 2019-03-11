@@ -4,3 +4,6 @@
 [user]
 	name = Stuart Taylor
 	email = stuartraetaylor@users.noreply.github.com
+[merge]
+    tool = vimdiff
+
