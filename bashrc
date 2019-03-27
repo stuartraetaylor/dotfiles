@@ -42,7 +42,13 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias ta='tmux attach'
-alias gw=./gradlew
+
+alias bashrc='source ~/.bashrc'
+
+alias gw='./gradlew'
+alias gs='git status'
+alias gf='git fetch'
+alias gp='git pull --rebase'
 
 # thefuck.
 [ -f /usr/local/bin/thefuck ] && eval $(thefuck --alias)
