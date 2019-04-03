@@ -46,9 +46,12 @@ alias ta='tmux attach'
 alias bashrc='source ~/.bashrc'
 
 alias gw='./gradlew'
+
 alias gs='git status'
+alias gl='git log'
+alias gd='git diff'
 alias gf='git fetch'
-alias gp='git pull --rebase'
+alias gp='git pull'
 
 # thefuck.
 [ -f /usr/local/bin/thefuck ] && eval $(thefuck --alias)
