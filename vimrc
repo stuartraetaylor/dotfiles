@@ -6,8 +6,8 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'vim-scripts/indentpython.vim'
+"Plugin 'Valloric/YouCompleteMe'
+"Plugin 'vim-scripts/indentpython.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -47,6 +47,7 @@ let mapleader = ","
 
 noremap <leader>w :w<cr>
 noremap <leader>q :q<cr>
+noremap <leader>Q :q!<cr>
 noremap <leader>e :e<cr>
 
 nnoremap <leader>v :e $MYVIMRC<cr>
