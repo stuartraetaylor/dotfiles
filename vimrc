@@ -8,6 +8,7 @@ Plugin 'gmarik/Vundle.vim'
 
 "Plugin 'Valloric/YouCompleteMe'
 "Plugin 'vim-scripts/indentpython.vim'
+Plugin 'editorconfig/editorconfig-vim'
 
 call vundle#end()
 filetype plugin indent on
