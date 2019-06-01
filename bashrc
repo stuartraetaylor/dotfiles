@@ -54,6 +54,7 @@ alias gf='git fetch'
 alias gp='git pull'
 
 alias vir='vim -M'
+alias f='fish'
 
 # thefuck.
 [ -f /usr/local/bin/thefuck ] && eval $(thefuck --alias)
