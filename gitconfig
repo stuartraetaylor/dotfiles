@@ -6,4 +6,9 @@
     email = stuartraetaylor@users.noreply.github.com
 [merge]
     tool = vimdiff
+[alias]
+    co = !git checkout
+    cm = !git commit
+    amend = !git commit --amend
+    push-new = !git push -u origin $(git rev-parse --abbrev-ref HEAD)
 
