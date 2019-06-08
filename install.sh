@@ -1,7 +1,8 @@
-#!/bin/bash
+#!/usr/bin/env bash
 declare -a dotfiles=("bashrc" "vimrc" "tmux.conf" "gitconfig")
 
-for f in "${dotfiles[@]}"; do
+link_file() {
+    f=$1
     echo
     read -r -p "Install .$f (overwrite existing file) [Y/n]? " r
     if [[ $r =~ ^(\s*|[yY])$ ]]; then
@@ -10,5 +11,14 @@ for f in "${dotfiles[@]}"; do
     else
         echo "Skipping .$f ..."
     fi
+}
+
+# ~/ files.
+for f in "${dotfiles[@]}"; do
+    link_file $f
 done
 
+# ~/.config/ files.
+for f in "$(find config -mindepth 2)"; do
+    link_file $f
+done
