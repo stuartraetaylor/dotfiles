@@ -19,6 +19,6 @@ for f in "${dotfiles[@]}"; do
 done
 
 # ~/.config/ files.
-for f in "$(find config -mindepth 2)"; do
+for f in "$(find config -mindepth 2 -type f)"; do
     link_file $f
 done
