@@ -55,6 +55,7 @@ alias gp='git pull'
 
 alias vir='vim -M'
 alias f='fish'
+alias rsync='rsync --progress'
 
 # thefuck.
 [ -f /usr/local/bin/thefuck ] && eval $(thefuck --alias)
