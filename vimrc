@@ -3,13 +3,11 @@ filetype off                  " required
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-
 Plugin 'gmarik/Vundle.vim'
-
-"Plugin 'Valloric/YouCompleteMe'
-"Plugin 'vim-scripts/indentpython.vim'
 Plugin 'editorconfig/editorconfig-vim'
-
+Plugin 'scrooloose/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'Valloric/YouCompleteMe'
 call vundle#end()
 filetype plugin indent on
 
@@ -68,3 +66,6 @@ nnoremap <F2> :set nonumber!<cr>
 set tabpagemax=128
 map <C-h> gT
 map <C-l> gt
+
+map <C-n> :NERDTreeToggle<CR>
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
