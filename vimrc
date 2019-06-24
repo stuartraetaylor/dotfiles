@@ -3,11 +3,14 @@ filetype off                  " required
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+
 Plugin 'gmarik/Vundle.vim'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'mileszs/ack.vim'
+
 call vundle#end()
 filetype plugin indent on
 
@@ -41,6 +44,8 @@ let &t_SI.="\e[5 q"
 let &t_EI.="\e[1 q"
 let &t_te.="\e[0 q"
 
+let g:ackprg = 'ag --vimgrep'
+
 " Key bindings.
 let mapleader = ","
 
@@ -53,6 +58,7 @@ nnoremap <leader>v :e $MYVIMRC<cr>
 nnoremap <leader>r :so $MYVIMRC<cr>
 
 nnoremap <leader>s :%s/
+nnoremap <leader>a :Ack<Space>
 nnoremap \ :noh<cr>
 
 inoremap jk <esc>
@@ -69,3 +75,4 @@ map <C-l> gt
 
 map <C-n> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
