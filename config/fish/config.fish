@@ -12,8 +12,6 @@ alias ta='tmux attach'
 
 alias bashrc='source ~/.bashrc'
 
-alias gw='./gradlew'
-
 alias gs='git status'
 alias gl='git log'
 alias gd='git diff'
@@ -22,3 +20,4 @@ alias gp='git pull'
 
 alias vir='vim -M'
 
+alias rsync='rsync --progress'

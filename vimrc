@@ -72,6 +72,7 @@ nnoremap <F2> :set nonumber!<cr>
 set tabpagemax=128
 map <C-h> gT
 map <C-l> gt
+map <leader>t :tabnew<cr>
 
 map <C-n> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif

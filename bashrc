@@ -45,8 +45,6 @@ alias ta='tmux attach'
 
 alias bashrc='source ~/.bashrc'
 
-alias gw='./gradlew'
-
 alias gs='git status'
 alias gl='git log'
 alias gd='git diff'
@@ -106,3 +104,10 @@ PS1="$PS1"'\[\033[0m\]'        # change to white
 PS1="$PS1"'\n'                 # new line
 PS1="$PS1"'$ '                 # '$'
 
+
+export PATH=/home/staylor/bin/Sencha/Cmd/5.1.3.61:$PATH
+
+export SENCHA_CMD_3_0_0="/home/staylor/bin/Sencha/Cmd/5.1.3.61"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
