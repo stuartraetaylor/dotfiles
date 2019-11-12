@@ -68,6 +68,7 @@ nnoremap k gk
 nnoremap " 0i"<esc>
 nnoremap <cr> i<cr><esc>==
 nnoremap <F2> :set nonumber!<cr>
+nnoremap <F3> :set norelativenumber!<cr>
 
 set tabpagemax=128
 map <C-h> gT
