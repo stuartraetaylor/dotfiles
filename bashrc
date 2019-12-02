@@ -49,6 +49,7 @@ alias gs='git status'
 alias gl='git log'
 alias gd='git diff'
 alias gf='git fetch'
+alias gm='git merge'
 alias gp='git pull'
 
 alias vir='vim -M'
