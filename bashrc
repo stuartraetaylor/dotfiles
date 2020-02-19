@@ -61,14 +61,6 @@ alias vir='vim -M'
 alias f='fish'
 alias rsync='rsync --progress'
 
-# thefuck.
-[ -f /usr/local/bin/thefuck ] && eval $(thefuck --alias)
-
-# MinGW specific
-if [ "$machine" == "MinGw" ]; then
-    alias az="/c/Program\ Files\ \(x86\)/Microsoft\ SDKs/Azure/CLI2/wbin/az.cmd"
-fi
-
 # Completion.
 if [ -f /usr/share/bash-completion/bash_completion ]; then
 . /usr/share/bash-completion/bash_completion
