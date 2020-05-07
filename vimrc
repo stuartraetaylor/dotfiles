@@ -30,6 +30,9 @@ set autoindent
 set encoding=utf-8
 set clipboard=unnamed
 
+set cursorcolumn
+set cursorline
+
 "let fo-=or
 syntax enable
 color desert

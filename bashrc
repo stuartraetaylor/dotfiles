@@ -60,6 +60,7 @@ alias gp='git pull'
 alias vir='vim -M'
 alias f='fish'
 alias rsync='rsync --progress'
+alias less='less -R'
 
 # Completion.
 if [ -f /usr/share/bash-completion/bash_completion ]; then
