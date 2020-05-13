@@ -8,11 +8,14 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
 Plugin 'mileszs/ack.vim'
 
 call vundle#end()
 filetype plugin indent on
+
+syntax enable
+color desert
 
 " Put swap files somewhere less intrusive
 set undodir=~/.vim/tmp//
@@ -33,10 +36,9 @@ set clipboard=unnamed
 set cursorcolumn
 set cursorline
 
-"let fo-=or
-syntax enable
-color desert
+highlight CursorLine term=bold cterm=bold guibg=DarkGrey
 
+"let fo-=or
 "au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 let g:tex_flavor='latex'
 set tabstop=4 shiftwidth=4 softtabstop=4 expandtab
