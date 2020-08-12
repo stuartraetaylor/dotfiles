@@ -11,4 +11,5 @@
     cm = !git commit
     amend = !git commit --amend
     push-new = !git push -u origin $(git rev-parse --abbrev-ref HEAD)
-
+[log]
+    date = iso
