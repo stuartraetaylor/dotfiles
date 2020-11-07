@@ -13,3 +13,5 @@
     push-new = !git push -u origin $(git rev-parse --abbrev-ref HEAD)
 [log]
     date = iso
+[pull]
+    rebase = true
