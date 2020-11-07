@@ -105,3 +105,13 @@ PS1="$PS1"'`__git_ps1`'        # Git bash function
 PS1="$PS1"'\[\033[0m\]'        # change to white
 PS1="$PS1"'\n'                 # new line
 PS1="$PS1"'$ '                 # '$'
+
+# Add some useful PATHs.
+add_path() {
+    if [ -d "$1" ]; then
+        PATH="$PATH:$1"
+    fi
+}
+
+add_path "$HOME/bin"
+add_path "$HOME/.local/bin"
