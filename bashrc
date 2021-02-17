@@ -64,6 +64,7 @@ alias vir='vim -M'
 alias f='fish'
 alias rsync='rsync --progress'
 alias less='less -R'
+alias dc='docker-compose'
 
 # Completion.
 if [ -f /usr/share/bash-completion/bash_completion ]; then
@@ -115,3 +116,10 @@ add_path() {
 
 add_path "$HOME/bin"
 add_path "$HOME/.local/bin"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+#source /usr/share/doc/fzf/examples/key-bindings.bash
+#source /usr/share/bash-completion/completions/fzf
