@@ -66,6 +66,8 @@ alias rsync='rsync --progress'
 alias less='less -R'
 alias dc='docker-compose'
 
+[ -f ~/.bash_aliases ] && source ~/.bash_aliases
+
 # Completion.
 if [ -f /usr/share/bash-completion/bash_completion ]; then
 . /usr/share/bash-completion/bash_completion
