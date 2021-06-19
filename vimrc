@@ -70,6 +70,8 @@ nnoremap \ :noh<cr>
 inoremap jk <esc>
 nnoremap j gj
 nnoremap k gk
+nnoremap J <C-f>
+nnoremap K <C-b>
 
 nnoremap " 0i"<esc>
 nnoremap <cr> i<cr><esc>==
