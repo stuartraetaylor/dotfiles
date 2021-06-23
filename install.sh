@@ -17,8 +17,3 @@ link_file() {
 for f in "${dotfiles[@]}"; do
     link_file $f
 done
-
-# ~/.config/ files.
-for f in "$(find config -mindepth 2 -type f)"; do
-    link_file $f
-done
