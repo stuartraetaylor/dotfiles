@@ -61,7 +61,7 @@ alias gm='git merge'
 alias gb='git branch'
 
 alias vir='vim -M'
-alias f='fish'
+alias v='vim'
 alias rsync='rsync --progress'
 alias less='less -R'
 alias dc='docker-compose'
