@@ -24,3 +24,5 @@
 	defaultBranch = master
 [credential]
 	helper = store
+[http]
+	postBuffer = 1048576000
