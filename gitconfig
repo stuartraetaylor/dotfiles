@@ -6,6 +6,7 @@
     email = stuartraetaylor@users.noreply.github.com
 [merge]
     tool = vimdiff
+	directoryRenames = true
 [alias]
     co = !git checkout
     cm = !git commit
