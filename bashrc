@@ -79,7 +79,7 @@ fi
 [ -f /etc/bash_completion.d/git-prompt ] && source /etc/bash_completion.d/git-prompt
 
 # Gradle completion.
-[ -f /etc/bash_completion.d/gradle-completion.bash ] && source /etc/bash_completion.d/gradle-completion.bash
+#[ -f /etc/bash_completion.d/gradle-completion.bash ] && source /etc/bash_completion.d/gradle-completion.bash
 
 # Git prompt options.
 if [ "$machine" != "MinGw" ]; then
