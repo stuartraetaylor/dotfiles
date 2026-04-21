@@ -22,7 +22,7 @@
 [pull]
     rebase = true
 [init]
-	defaultBranch = master
+	defaultBranch = main
 [credential]
 	helper = store
 [http]
