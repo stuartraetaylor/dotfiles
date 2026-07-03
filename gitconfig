@@ -17,6 +17,7 @@
     review = "!f() { \
         git fetch && git checkout origin/$1; \
       }; f"
+	pushf = push --force-with-lease --force-if-includes
 [log]
     date = iso
 [pull]
