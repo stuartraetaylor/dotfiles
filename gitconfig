@@ -3,7 +3,7 @@
     autocrlf = input
 [user]
     name = Stuart Taylor
-    email = 229520+stuartraetaylor@users.noreply.github.com 
+    email = 229520+stuartraetaylor@users.noreply.github.com
 [merge]
     tool = vimdiff
 	directoryRenames = true
