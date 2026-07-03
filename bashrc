@@ -64,7 +64,7 @@ alias vir='vim -M'
 alias v='vim'
 alias rsync='rsync --progress'
 alias less='less -R'
-alias dc='docker-compose'
+alias dc='docker compose'
 
 [ -f ~/.bash_aliases ] && source ~/.bash_aliases
 
